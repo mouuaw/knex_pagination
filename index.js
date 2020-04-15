@@ -21,8 +21,30 @@ const params = {
       order: 'asc'
     }
   ],
-  available_filter: [],
-  available_order: []
+  available_filter: [
+    {
+      name: '나이',
+      column: 'age',
+      type: 'number'
+    },
+    {
+      name: '성별',
+      column: 'sex',
+      type: 'constant',
+      constant_type: ['male', 'female']
+    },
+    {
+      name: '이름',
+      column: 'name',
+      type: 'string'
+    },
+  ],
+  available_order: [
+    {
+      name: '나이',
+      column: 'age'
+    },
+  ]
 }
 
 paging_manager.paging_info_generator(params)

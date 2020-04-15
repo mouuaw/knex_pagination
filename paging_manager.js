@@ -57,6 +57,19 @@ function pagination_gen(base_knex, pagination) {
 }
 
 function filter_gen(base_knex, filter) {
+
+  // where
+  // whereNot
+  // whereIn
+  // whereNotIn
+  // whereNull
+  // whereNotNull
+  // whereExists
+  // whereNotExists
+  // whereBetween
+  // whereNotBetween
+
+
   if(filter && filter.length){
 
   }
